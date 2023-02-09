@@ -103,31 +103,60 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                <a class="reference internal" href="docs/introduction.html">
+                    计算社会科学导论
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/chapter1.html">
+   第一章 课程大纲
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/chapter1-1.html">
+     第一节 AAAAAAAAA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/chapter1-2.html">
+     第二节 BBBBBBB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://example.com">
+     Example website
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
+  <a class="reference internal" href="docs/notebooks.html">
    Content with notebooks
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/markdown-notebooks.html">
    Notebooks with MyST Markdown
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="myfile.html">
-   Here’s my sample title
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/myfile.html">
+     Here’s my sample title
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
