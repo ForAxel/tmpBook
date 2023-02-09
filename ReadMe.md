@@ -20,3 +20,12 @@ To add Jupytext syntax to a Markdown file (that will tell Jupytext it is a MyST 
 
 build 过程debug
 > jupyter-book build -W -n --keep-going mybookname/
+
+
+# 发布内容到github上
+
+需要使用 ghp-import 第三方库
+> pip install ghp-import
+
+
+> ghp-import -n -p -f _build/html
