@@ -2,9 +2,44 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: myfile
+root: docs/introduction
+
+# parts:
+# - caption: Name of part1
+#   chapters: 
+#   - file: markdown
+#   - file: notebooks
+# - caption: Name of part 2
+#   chapters:
+#   - file: markdown-notebooks
+#     sections:
+#     - file: myfile
+#     - url: https://example.com
+#       title: Example website
+
+options:
+  numbered: false
+
+# 之前的内容
+# chapters: 
+#   - file: docs/markdown
+#   - file: docs/notebooks
+#   - file: docs/markdown-notebooks
+#     sections:
+#     - file: docs/myfile
+#     - url: https://example.com
+#       title: Example website
+
+chapters: 
+  - file: docs/chapter1
+    sections:
+    - file: docs/chapter1-1
+    - file: docs/chapter1-2
+    - url: https://example.com
+      title: Example website
+  # - file: docs/markdown
+  - file: docs/notebooks
+  - file: docs/markdown-notebooks
+    sections:
+    - file: docs/myfile
+
